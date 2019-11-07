@@ -129,7 +129,7 @@ const codes = {
   39: { eng: ['Right'], ru: ['Right'] }
 };
 
-lan = localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng';
+let lan = localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng';
 
 let langComb = [];
 let shift = 16;
@@ -209,7 +209,6 @@ function initKb(lang) {
 initKb(lan);
 
 document.addEventListener('keydown', e => {
-  // backspace
   if (e.keyCode === 8) {
     ta.value = ta.value.substring(0, ta.value.length - 1);
   }
