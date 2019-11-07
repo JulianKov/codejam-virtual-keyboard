@@ -1,5 +1,7 @@
 const buttons = [
-  { size: 50, keyCode: 192, caps: true, click: true },
+  {
+    size: 50, keyCode: 192, caps: true, click: true,
+  },
   { size: 50, keyCode: 49, click: true },
   { size: 50, keyCode: 50, click: true },
   { size: 50, keyCode: 51, click: true },
@@ -12,57 +14,153 @@ const buttons = [
   { size: 50, keyCode: 48, click: true },
   { size: 50, keyCode: 189, click: true },
   { size: 50, keyCode: 187, click: true },
-  { size: 120, keyCode: 8, color: 'dark', click: false },
-  { size: 65, keyCode: 9, color: 'dark', click: false },
-  { size: 50, keyCode: 81, caps: true, click: true },
-  { size: 50, keyCode: 87, caps: true, click: true },
-  { size: 50, keyCode: 69, caps: true, click: true },
-  { size: 50, keyCode: 82, caps: true, click: true },
-  { size: 50, keyCode: 84, caps: true, click: true },
-  { size: 50, keyCode: 89, caps: true, click: true },
-  { size: 50, keyCode: 85, caps: true, click: true },
-  { size: 50, keyCode: 73, caps: true, click: true },
-  { size: 50, keyCode: 79, caps: true, click: true },
-  { size: 50, keyCode: 80, caps: true, click: true },
-  { size: 50, keyCode: 219, caps: true, click: true },
-  { size: 50, keyCode: 221, caps: true, click: true },
+  {
+    size: 120, keyCode: 8, color: 'dark', click: false,
+  },
+  {
+    size: 65, keyCode: 9, color: 'dark', click: false,
+  },
+  {
+    size: 50, keyCode: 81, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 87, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 69, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 82, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 84, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 89, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 85, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 73, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 79, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 80, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 219, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 221, caps: true, click: true,
+  },
   { size: 50, keyCode: 220, click: true },
-  { size: 50, keyCode: 46, color: 'dark', click: false },
-  { size: 120, keyCode: 20, color: 'dark', click: false },
-  { size: 50, keyCode: 65, caps: true, click: true },
-  { size: 50, keyCode: 83, caps: true, click: true },
-  { size: 50, keyCode: 68, caps: true, click: true },
-  { size: 50, keyCode: 70, caps: true, click: true },
-  { size: 50, keyCode: 71, caps: true, click: true },
-  { size: 50, keyCode: 72, caps: true, click: true },
-  { size: 50, keyCode: 74, caps: true, click: true },
-  { size: 50, keyCode: 75, caps: true, click: true },
-  { size: 50, keyCode: 76, caps: true, click: true },
-  { size: 50, keyCode: 186, caps: true, click: true },
-  { size: 50, keyCode: 222, caps: true, click: true },
-  { size: 105, keyCode: 13, color: 'dark', click: false },
-  { size: 120, keyCode: 16, color: 'dark', click: false, location: 1 },
-  { size: 50, keyCode: 90, caps: true, click: true },
-  { size: 50, keyCode: 88, caps: true, click: true },
-  { size: 50, keyCode: 67, caps: true, click: true },
-  { size: 50, keyCode: 86, caps: true, click: true },
-  { size: 50, keyCode: 66, caps: true, click: true },
-  { size: 50, keyCode: 78, caps: true, click: true },
-  { size: 50, keyCode: 77, caps: true, click: true },
-  { size: 50, keyCode: 188, caps: true, click: true },
-  { size: 50, keyCode: 190, caps: true, click: true },
+  {
+    size: 50, keyCode: 46, color: 'dark', click: false,
+  },
+  {
+    size: 120, keyCode: 20, color: 'dark', click: false,
+  },
+  {
+    size: 50, keyCode: 65, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 83, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 68, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 70, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 71, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 72, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 74, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 75, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 76, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 186, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 222, caps: true, click: true,
+  },
+  {
+    size: 105, keyCode: 13, color: 'dark', click: false,
+  },
+  {
+    size: 120, keyCode: 16, color: 'dark', click: false, location: 1,
+  },
+  {
+    size: 50, keyCode: 90, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 88, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 67, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 86, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 66, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 78, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 77, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 188, caps: true, click: true,
+  },
+  {
+    size: 50, keyCode: 190, caps: true, click: true,
+  },
   { size: 50, keyCode: 191, click: true },
-  { size: 105, keyCode: 16, color: 'dark', click: false, location: 2 },
-  { size: 50, keyCode: 38, color: 'dark', click: false },
-  { size: 65, keyCode: 17, color: 'dark', click: false, location: 1 },
-  { size: 50, keyCode: 91, color: 'dark', click: false },
-  { size: 50, keyCode: 18, color: 'dark', click: false, location: 1 },
+  {
+    size: 105, keyCode: 16, color: 'dark', click: false, location: 2,
+  },
+  {
+    size: 50, keyCode: 38, color: 'dark', click: false,
+  },
+  {
+    size: 65, keyCode: 17, color: 'dark', click: false, location: 1,
+  },
+  {
+    size: 50, keyCode: 91, color: 'dark', click: false,
+  },
+  {
+    size: 50, keyCode: 18, color: 'dark', click: false, location: 1,
+  },
   { size: 365, keyCode: 32, click: true },
-  { size: 50, keyCode: 18, color: 'dark', click: false, location: 2 },
-  { size: 65, keyCode: 17, color: 'dark', click: false, location: 2 },
-  { size: 50, keyCode: 37, color: 'dark', click: false },
-  { size: 50, keyCode: 40, color: 'dark', click: false },
-  { size: 50, keyCode: 39, color: 'dark', click: false }
+  {
+    size: 50, keyCode: 18, color: 'dark', click: false, location: 2,
+  },
+  {
+    size: 65, keyCode: 17, color: 'dark', click: false, location: 2,
+  },
+  {
+    size: 50, keyCode: 37, color: 'dark', click: false,
+  },
+  {
+    size: 50, keyCode: 40, color: 'dark', click: false,
+  },
+  {
+    size: 50, keyCode: 39, color: 'dark', click: false,
+  },
 ];
 
 const codes = {
@@ -126,11 +224,10 @@ const codes = {
   32: { eng: [' '], ru: [' '] },
   37: { eng: ['Left'], ru: ['Left'] },
   40: { eng: ['Down'], ru: ['Down'] },
-  39: { eng: ['Right'], ru: ['Right'] }
+  39: { eng: ['Right'], ru: ['Right'] },
 };
 
 let lan = localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng';
-
 let langComb = [];
 let shift = 16;
 let alt = 18;
@@ -143,7 +240,7 @@ document.querySelector('body').append(tawrapper);
 
 function clickInit() {
   const btns = document.querySelectorAll('.btn');
-  btns.forEach(btn => {
+  btns.forEach((btn) => {
     btn.addEventListener('click', () => {
       if (btn.dataset.click === 'true') {
         ta.value += codes[btn.dataset.kk][lan][0];
@@ -170,7 +267,7 @@ function initKb(lang) {
   const kb = document.createElement('div');
   kb.classList.add('keyboard');
   document.querySelector('body').append(kb);
-  buttons.forEach(btn => {
+  buttons.forEach((btn) => {
     const node = document.createElement('div');
     node.classList.add('btn');
     if (btn.size === 120) {
@@ -208,7 +305,7 @@ function initKb(lang) {
 
 initKb(lan);
 
-document.addEventListener('keydown', e => {
+document.addEventListener('keydown', (e) => {
   if (e.keyCode === 8) {
     ta.value = ta.value.substring(0, ta.value.length - 1);
   }
@@ -245,9 +342,9 @@ document.addEventListener('keydown', e => {
   }
 });
 
-document.addEventListener('keyup', e => {
+document.addEventListener('keyup', (e) => {
   if (e.keyCode === 16 || e.keyCode === 18) {
-    const arr = langComb.filter(el => el !== e.keyCode);
+    const arr = langComb.filter((el) => el !== e.keyCode);
     langComb = arr;
   }
 
